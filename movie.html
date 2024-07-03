@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Buster</title>
+    <link rel="stylesheet" href="movie.css">
+    <script src="https://kit.fontawesome.com/ff3b69828d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav-container">
+          <a href="index.html">
+            <img src="" alt="">
+          </a>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="movie.html">Movies</a></li>
+          </ul>
+        </div>
+      </nav>
+    <section id="movie-page">
+    <div class="container">
+      <div class="row">
+        <h1>Movies</h1>
+        <form action="" class="search">
+          <input type="text" class="search-input" placeholder="Search a Movie">
+          <button class="search-button click">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <select id="filter" onchange="filterMovies(event)">
+          <option value="Latest-Movies">Latest Movies</option>
+          <option value="Oldest-Movies">Oldest Movies</option>
+        </select>
+        <div class="movie-list">
+          <div class="movie">
+            <div class="movie-card">
+              <div class="movie-card__container movie-disapear">
+                <img class="movie-poster" src="https://m.media-amazon.com/images/M/MV5BMTY3ODc3MjMzM15BMl5BanBnXkFtZTcwMjIwNzIyMQ@@._V1_SX300.jpg" alt="" />
+                <h3><b>Name</b></h3>
+                <p>Date</p>
+                <p><a href="https://www.imdb.com/title/${movie.imdbID}">IMDB</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="footer">
+  <div class="container">
+    <hr>
+    <div class="row">
+      <img class="footer-img" src="" alt="">
+      <p class="footer-copyright">&copy Movie All Rights Reserved</p>
+      <ul class="footer-github">
+        <a href="">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </ul>
+    </div>
+  </div>
+</section>
+  </body>
+  <script src="movie.js"></script>
+</html>
