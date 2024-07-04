@@ -38,12 +38,14 @@ async function getMovies() {
 }
 
 function movieHTML(movie) {
-    return `<div class="movie-card">
-                <div class="movie-card__container">
-                    <img class="movie-poster" src="${movie.Poster}" alt="" />
-                    <h3><b>${movie.Title}</b></h3>
-                    <p>${movie.Year}</p>
-                    <p><a href="https://www.imdb.com/title/${movie.imdbID}">IMDB</a></p>
+    return ` <div class="movie-card">
+              <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank">
+                <div class="movie-card__container movie-disapear">
+                  <img class="movie-poster" src="${movie.Poster}" alt="" />
+                  <h3><b>${movie.Title}</b></h3>
+                  <p>${movie.Year}</p>
+                  <p></p>
                 </div>
+              </a>
             </div>`
 }
