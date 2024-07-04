@@ -40,7 +40,18 @@ p {
     color: white;
 }
 
-.click
+.click {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
 
 .container {
     padding: 24px 0;
@@ -137,8 +148,9 @@ input:hover {
 .search-button {
     position: absolute;
     margin-right: 5px;
+    padding: 8px 0;
     width: 80px;
-    font-size: 36px;
+    font-size: 24px;
     border-radius: 24px;
     background-color: #052a7a;
     color: white;
@@ -158,6 +170,7 @@ select {
     max-width: 500px;
     background-color: azure;
     border: none;
+    text-align: center;
     transition: all 300ms ease;
 }
 
@@ -243,4 +256,55 @@ FOOTER
 .fa-brands:hover {
     color: white;
     transition: all 300ms ease;
+}
+
+/* SMALL PHONES, TABLET, LARGE SMART PHONES */
+@media (max-width: 768px) {
+    .row {
+        padding: 12px;
+    }
+    .movie-card {
+        max-width: 200px;
+    }
+}
+
+/*  */
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .nav-link {
+        display: none;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+    }
+    .search-input {
+        max-width: 100%;
+        border-radius: 24px;
+    }
+    .search-button {
+        position: relative;
+        border: solid 2px white;
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    select {
+        border-radius: 24px;
+    }
+    .movie-card {
+        max-width: 100%;
+    }
+    .footer-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
